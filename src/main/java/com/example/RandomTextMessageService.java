@@ -1,7 +1,10 @@
 package com.example;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Random;
 
+@Component("secondMessageService")
 public class RandomTextMessageService implements MessageService {
     private final String[] messages = {"message 1", "sample 2", "random message 3", "mess. 4", "sent 5", "message 6/10", "Hello World", "msg 8", "9...", "last message"};
     @Override
